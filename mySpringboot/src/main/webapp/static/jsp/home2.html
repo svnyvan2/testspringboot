@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>首页</title>
+<link rel="stylesheet" th:href="@{/static/css/home.css}"/>
+<script th:src="@{/static/js/jquery/jquery-1.11.2.min.js}"></script>
+<!-- <script th:src="@{/static/js/jquery/jquery.ui.all.js}"></script> -->
+<script th:src="@{/static/js/jquery/jquery.layout.js}"></script>
+<script th:src="@{/static/js/home.js}"></script>
+</head>
+<body id="home">
+<input type="hidden" id="_app.contextPath" th:value="@{_app}"/>
+<div class="ui-layout-north" style="background-color: red;">
+</div>
+<div class="ui-layout-center">
+	<div class="ui-layout-west" style="background-color: green;">
+	<button id="btn">点击切换界面</button>
+	</div>
+	<div id="mainFrame" class="ui-layout-center" style="background-color: yellow;">
+	</div>
+</div>
+
+
+</body>
+</html>

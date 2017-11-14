@@ -1,0 +1,68 @@
+@CHARSET "UTF-8";
+.ui-layout-pane {
+		padding:0;
+		overflow:hidden;
+	}
+.ui-layout-resizer{
+	background:rgb(216, 216, 216);   
+    border:0px solid #BBB;   
+    border-width:0px;   
+    width:10px;
+} 
+.ui-layout-resizer-south-open{
+	background:rgb(216, 216, 216);   
+    border:0px solid #BBB;   
+    border-width:0px;   
+    width:10px;
+}
+.ui-layout-resizer.ui-layout-resizer-west.ui-layout-resizer-open.ui-layout-resizer-west-open
+.ui-layout-west.ui-layout-pane.ui-layout-pane-west{
+	overflow-y: auto;
+	box-sizing: content-box;
+}
+.div-class-north{
+	width: 100% ;
+	height: 120px;
+	position: fixed;
+	background-color: red ;
+	z-index:2 ;
+	top:0px;
+	left:0px;
+}
+.div-class-south-west{
+	width: 200px;
+	height: 100% ;
+	background-color: green ;
+	z-index:1 ;
+	top: 0px;
+	left:0px;
+	position: fixed;
+}
+.custom-btn{
+	width: 8px;
+	height: 100%;
+	z-index: 1;
+	position: fixed;
+	top:0px;
+	background-color:grey;
+	left: 200px;
+}
+.span-door.open{
+	width: 8px;
+	height: 48px;
+	margin-top:300px;
+	cursor:pointer;
+	background: url("../images/left-close-bar.png");
+}
+.span-door.close{
+	width: 8px;
+	height: 48px;
+	margin-top:300px;
+	cursor:pointer;
+	background: url("../images/right-open-bar.png");
+}
+.div-class-south-east{
+	background-color: yellow ;
+	margin-left:200px;
+	margin-top:120px;
+}

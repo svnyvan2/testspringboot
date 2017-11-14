@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Insert title here</title>
+ <script th:src="@{/static/js/jquery/jquery-3.2.1.min.js}"></script>
+ <script>
+ var i =  0
+$(function(){
+	
+	$("#btn1").click(function(){
+		i++ ;
+		alert("加载资源");
+		$("#div1").load("/tt/test/test2") ;
+	}) ;
+});
+</script>
+</head>
+<body>
+<div id="div1" style="background-color: red;width: 1000px;height: 100px;">
+</div>
+<button id="btn1">点击加载</button>
+</body>
+</html>
