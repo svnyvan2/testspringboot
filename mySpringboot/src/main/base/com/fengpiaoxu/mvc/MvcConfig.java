@@ -18,6 +18,10 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
 	private static Logger log = LoggerFactory.getLogger(MvcConfig.class) ;
 	@Bean
 	CoustomInterceptor coustomInterceptor(){
+		
+		
+		
+		
 		return new CoustomInterceptor() ;
 	}
 	
